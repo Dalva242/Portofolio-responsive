@@ -1,373 +1,345 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="src/style/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio_responsive</title>
+    <link rel="stylesheet" href="src/style/output.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav class="flex justify-around items-center py-2">
-        <img src="./src/asset/icons/Logo.png" alt="logo" class="object-cover" />
-        <ul class="flex gap-7 font-bold">
-          <li><a href="#">AboutMe</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">ContactMe</a></li>
-        </ul>
-        <button
-          type="button"
-          class="flex gap-2 items-center w-25 px-3 py-1 text-white bg-black"
-        >
-          Resume
-          <img
-            src="./src/asset/icons/download.png"
-            alt=""
-            class="object-cover size-4"
-          />
-        </button>
-      </nav>
+        <nav class=" text-black p-4 md:flex   ">
+            <div class="flex items-center justify-between  w-full md:flex md:justify-between ">
+                <!-- LOGO -->
+                <img src="./src/asset/icons/Logo.png" alt="logo">
+                <!-- CHECKBOX CACHEE -->
+                <input type="checkbox" name="checkbox" id="checkbox" class="peer hidden">
+                <!-- BOUTON HAMBURGER -->
+                <label for="checkbox" class="cursor-pointer md:hidden">
+                    <div class="space-y-1">
+                        <span class="block h-1 w-6 bg-black"></span>
+                        <span class="block h-1 w-6 bg-black"></span>
+                        <span class="block h-1 w-6 bg-black"></span>
+                    </div>
+                </label>
+
+                <!-- MENU DESKTOP  -->
+                 <div class="hidden md:flex items-center  justify-between w-full ml-100 font-bold ">
+                    <ul class="hidden md:flex gap-10  ">
+                        <li><a href="#">AboutMe</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">ContactMe</a></li>
+                    </ul>
+                    <button type="button" class="hidden bg-black text-white p-2 md:flex md:items-center md:gap-2 rounded">Resume <img src="src/asset/icons/download.png" alt=""></button>
+                 </div>   
+                 <!-- MENU MOBILE -->
+                  <ul class="absolute left-0 top-16 hidden w-full py-5 font-bold bg-white space-y-6 peer-checked:block lg:hidden ">
+                    <li><a href="#">AboutMe</a></li>  
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">ContactMe</a></li>                    
+                  </ul>
+            </div>
+        </nav>
     </header>
-    <!-- -----------------------------CORPS DE LA PAGE -->
-    <main>
-      <!-- --------------------PREMIERE SECTION -->
-      <section class="h-150 flex items-center gap-35 px-40 py-35">
-        <div class="flex flex-col gap-10">
-          <h1 class="text-5xl">
-            Hello I'am <span class="font-bold">Flora Sheen</span>. <br />
-            <span class="font-bold">Frontend </span
-            ><span class="text-white text-6xl font-bold text-outline"
-              >Developer</span
-            ><br />
-            Based In <span class="font-bold">India.</span>
-          </h1>
-          <p class="w-150">
-            I'm Flora Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Alias sit perferendis recusandae a inventore aperiam, accusamus
-            voluptatum odio numquam rerum minima quis saepe qui. Deleniti ab
-            excepturi similique rerum autem.
-          </p>
-          <div class="flex gap-5">
-            <img src="./src/asset/icons/Button.png" alt="logo_facebook" />
-            <img src="./src/asset/icons/Button (1).png" alt="social_icon" />
-            <img src="./src/asset/icons/Button (2).png" alt="x_logo" />
-            <img src="./src/asset/icons/Button (3).png" alt="discord_logo" />
-          </div>
-        </div>
-        <div class="w-125 mb-10">
-          <img
-            src="src/asset/images/Banner.png"
-            alt="banner"
-            class="w-full object-contain"
-          />
-        </div>
-      </section>
-
-      <!-- -----------DEUXIEME SECTION  -->
-      <section class="flex flex-wrap items-center">
-        <div class="text-center flex items">
-          <h1 class="text-2xl mx-170 p-2">
-            MY <span class="font-bold">Skills</span>
-          </h1>
-        </div>
-
-        <div class="grid grid-cols-5 gap-15 ml-40 p-5">
-          <img src="./src/asset/icons/Skills (1).png" alt="" />
-          <img src="./src/asset/icons/Skills (2).png" alt="" />
-          <img src="./src/asset/icons/Skills (3).png" alt="" />
-          <img src="./src/asset/icons/Skills (4).png" alt="" />
-          <img src="./src/asset/icons/Skills (5).png" alt="" />
-          <img src="./src/asset/icons/Skills (6).png" alt="" />
-          <img src="./src/asset/icons/Skills (7).png" alt="" />
-          <img src="./src/asset/icons/Skills (8).png" alt="" />
-          <img src="./src/asset/icons/Skills (9).png" alt="" />
-          <img src="./src/asset/icons/Skills.png" alt="" />
-        </div>
-      </section>
-
-      <!-- ----------------------SECTION TROIS -- EXPERIENCE -->
-
-      <section
-        class="bg-black text-white flex flex-col gap-5 items-center py-15 my-15"
-      >
-        <h1 class="text-4xl py-5">
-          MY <span class="font-bold">EXPERIENCE</span>
-        </h1>
-        <div class="border border-gray-400 mx-15 p-5 rounded-xl">
-          <div class="flex items-center gap-5">
-            <img src="src/asset/icons/icons8-google-48.png" alt="google_logo" />
-            <div class="flex">
-              <h1 class="font-bold text-2xl">
-                Lead Software Engineer at Google
-              </h1>
-              <span class="text-gray-200 ml-194"> Nov2019-Present</span>
+    <main>              
+        <!-- -----------PREMIERE SECTION -- PRESENTATION -->
+        <section class="md:flex md:flex-row md:justify-around items-center md:items-center flex flex-col-reverse ">
+            <div class="px-5  ">
+                <div class="md:flex  md:flex-col space-y-15 px-2  md:w-175 md:px-20">
+                
+                    <h1 class="text-3xl md:text-5xl">
+                        Hello I'am <span class="font-bold">Franck Dalva. <br>
+                        Frontend</span> <span class="text-white font-bold text-outline">Developper</span>
+                        Besed In <span class="font-bold">R.Congo</span>
+                    </h1>
+                    <p>
+                        I'm Franck Dalva Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat explicabo 
+                        tempore aut nesciunt exercitationem odit accusamus, recusandae iure possimus quos aperiam, nulla id 
+                        laboriosam dolorem quisquam, esse natus earum!
+                    </p>
+                </div>    
+                <div class="flex gap-5 md:ml-19 py-10">
+                    <img src="./src/asset/icons/Button.png" alt="logo_facebook">
+                    <img src="./src/asset/icons/Button (1).png" alt="gitlogo">
+                    <img src="./src/asset/icons/Button (2).png" alt="logo">
+                    <img src="./src/asset/icons/Button (3).png" alt="x_logo">
+                </div>
             </div>
-          </div>
-          <p class="text-gray-300 py-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-            itaque laboriosam totam autem adipisci facilis impedit cumque
-            commodi veniam culpa provident quia, rem quos! Omnis ipsa veritatis
-            quisquam esse tempora.
-          </p>
-        </div>
-        <div class="bg-gray-700/20 border border-gray-400 mx-15 p-5 rounded-xl">
-          <div class="flex items-center gap-5">
-            <img
-              src="src/asset/icons/icons8-youtube-48.png"
-              alt="google_logo"
-            />
-            <div class="flex">
-              <h1 class="font-bold text-2xl">Software Engineer at Youtube</h1>
-              <span class="text-gray-200 ml-194"> Jan2017-Oct2019</span>
-            </div>
-          </div>
-          <p class="text-gray-300 py-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-            itaque laboriosam totam autem adipisci facilis impedit cumque
-            commodi veniam culpa provident quia, rem quos! Omnis ipsa veritatis
-            quisquam esse tempora.
-          </p>
-        </div>
-        <div class="border border-gray-400 mx-15 p-5 rounded-xl">
-          <div class="flex items-center gap-5">
-            <img
-              src="src/asset/icons/icons8-apple-inc-48.png"
-              alt="google_logo"
-            />
-            <div class="flex">
-              <h1 class="font-bold text-2xl">
-                Junior Software Engineer at Apple
-              </h1>
-              <span class="text-gray-200 ml-190"> Nov2019-Present</span>
-            </div>
-          </div>
-          <p class="text-gray-300 py-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-            itaque laboriosam totam autem adipisci facilis impedit cumque
-            commodi veniam culpa provident quia, rem quos! Omnis ipsa veritatis
-            quisquam esse tempora.
-          </p>
-        </div>
-      </section>
-
-      <!-- -------------------SECTION QUATRE - ABOUT  -->
-      <section class="">
-        <div class="flex items-center mx-15">
-          <img src="src/asset/images/Group 1000015859.png" alt="my_image" />
-          <div class="mx-15 pb-20">
-            <h1 class="text-4xl py-15">
-              About <span class="font-bold">Me</span>
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, a
-              ad fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Vitae, a molestiae eveniet officiis est nulla perferendis iusto.
-              Pariatur non tenetur unde, Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae, a odit minus id quis hic neque quas.
-            </p>
-            <br />
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-              eveniet nostrum vel, tenetur, officiis quaerat eligendi sit velit
-              animi vitae distinctio minus quis asperiores ab consectetur quos
-              libero neque harum?Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae, a Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-              accusamus rem saepe ipsa fugiat est doloribus iure voluptatum
-              consequatur beatae error sequi facilis, rerum harum quia quos
-              magni temporibus nulla. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae, a Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae, a
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- ------------------------------SECTION CINQ --MY PROJECTS -->
-      <section class="bg-black text-white flex flex-col items-center my-5">
-        <h1 class="text-4xl pt-15">
-          MY <span class="font-bold">Projects</span>
-        </h1>
-
-        <div class="flex justify-around gap-15 items-center">
-          <img src="src/asset/images/image-project-one.png" alt="" />
-          <div class="flex flex-col gap-5">
-            <h1 class="font-bold text-4xl">01</h1>
-            <h2 class="text-4xl font-bold">Crypto Sreener Application</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis, at assumenda non dolorembr <br />
-              harum laudantium deserunt natus ullam, nemo nobis laboriosam in
-              autem. Voluptas adipisci <br />
-              maxime, consequuntur fuga saepe dicta!
-            </p>
-            <img
-              src="src/asset/icons/Read More.png"
-              alt="redmoreimg"
-              class="size-5"
-            />
-          </div>
-        </div>
-        <div class="flex flex-row-reverse justify-around gap-25 items-center">
-          <img src="src/asset/images/image-project-two.png" alt="" />
-          <div class="flex flex-col gap-5">
-            <h1 class="font-bold text-4xl">02</h1>
-            <h2 class="text-4xl font-bold">Crypto Sreener Application</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis, at assumenda non dolorembr <br />
-              harum laudantium deserunt natus ullam, nemo nobis laboriosam in
-              autem. Voluptas adipisci <br />
-              maxime, consequuntur fuga saepe dicta!
-            </p>
-            <img
-              src="src/asset/icons/Read More.png"
-              alt="redmoreimg"
-              class="size-5"
-            />
-          </div>
-        </div>
-        <div class="flex justify-around gap-25 items-center">
-          <img src="src/asset/images/image-project-three.png" alt="" />
-          <div class="flex flex-col gap-5">
-            <h1 class="font-bold text-4xl">03</h1>
-            <h2 class="text-4xl font-bold">Crypto Sreener Application</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis, at assumenda non dolorembr <br />
-              harum laudantium deserunt natus ullam, nemo nobis laboriosam in
-              autem. Voluptas adipisci <br />
-              maxime, consequuntur fuga saepe dicta!
-            </p>
-            <img
-              src="src/asset/icons/Read More.png"
-              alt="redmoreimg"
-              class="size-5"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- ---------------------SECTION SIX -- TESTIMONY -->
-
-      <section class="p-20">
-        <h1 class="text-4xl  text-center pb-15">My <span class="font-bold">Testimonial</span></h1>
-        <div class="flex justify-around">
-          <div
-            class="flex flex-col items-center gap-5 p-10 h-99.5 w-92.5 rounded-xl shadow-gray-200 shadow-xl"
-          >
-            <img
-              src="src/asset/images/testimoni-image-1.png"
-              alt="testimony1"
-              class="size-24"
-            />
-            <p class="text-gray-600 text-center">
-              I recently had to jum on 10+ diferent calls across eight different
-              calls countries to find the right owner
-            </p>
-            <div class="border-2 border-black w-35"></div>
-            <h1>Flora Sheen</h1>
-            <p class="text-gray-600">Designer</p>
-          </div>
-          <div
-            class="flex flex-col text-white items-center gap-5 p-10 h-99.5 w-92.5 bg-black rounded-xl shadow-gray-800 shadow-xl/30"
-          >
-            <img
-              src="src/asset/images/testimoni-image-2.png"
-              alt="testimony2"
-            />
-            <p class="text-center">
-              I recently had to jum on 10+ diferent calls across eight different
-              calls countries to find the right owner
-            </p>
-            <div class="border-2 border-white w-35"></div>
-            <h1>Flora Sheen</h1>
-            <p>Designer</p>
-          </div>
-          <div
-            class="flex flex-col items-center gap-5 p-10 h-99.5 w-92.5 rounded-xl shadow-gray-200 shadow-xl"
-          >
-            <img
-              src="src/asset/images/testimoni-image-1.png"
-              alt="testimony3"
-            />
-            <p class="text-gray-600 text-center">
-              I recently had to jum on 10+ diferent calls across eight different
-              calls countries to find the right owner
-            </p>
-            <div class="border-2 border-black w-35"></div>
-            <h1>Flora Sheen</h1>
-            <p class="text-gray-600">Designer</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- -------------------SECTION SEPT-- CONTACT -->
-      <section class="flex justify-around">
-        <div class="flex flex-col  gap-10" >
             <div>
-              <form action="" class="flex flex-col gap-5">
-                <div class="border border-gray-700 flex p-3 gap-2 rounded">
-                  <h1 class="text-gray-400">Your name</h1>
-                  <label for="name"> 
-                    <input type="text" name="name" id="name" >
-                  </label>
-                </div>
-                <div class="border border-gray-700 flex p-3 gap-2 rounded">
-                  <h1 class="text-gray-400">Email</h1>
-                  <label for="email">
-                    <input type="text" name="email" id="email">
-                  </label>
-                </div>
-                <div class="border border-gray-700 flex p-3 gap-2 rounded" >
-                  <h1 class="text-gray-400">Your website (If exists) </h1>
-                  <label for="text">
-                    <input type="text" name="site" id="site">
-                  </label>
-                </div>
-                <div class="border border-gray-700 flex p-5 gap-3 rounded">
-                  <h1 class="text-gray-400">How can I help?*</h1>
-                  <textarea name="help" id="help"></textarea>
-                </div>
-              </form>
+             <img src="src/asset/images/Banner.png" alt="img_girl" class="w-full">
+
             </div>
-            
-            <div class="flex gap-5 p-2 items-center" >
-              <button type="button" class="bg-black text-white rounded p-2 w-40 h-13">Get In touch</button>
-              <img src="src/asset/icons/Button.png" alt="fblogo">
-              <img src="src/asset/icons/Button (1).png" alt="gitlogo">
-              <img src="src/asset/icons/Button (2).png" alt="xlogo">
-              <img src="src/asset/icons/Button (3).png" alt="logo">
+        </section>
+                    <!-- DEUXIEME SECTION -- LANGAGE -->
+        <section class="flex flex-col items-center ">
+            <h1 class="text-3xl md:text-5xl text-center py-5">
+                My <span class="font-bold">Skills</span>
+            </h1>
+            <!-- -------------DEFINITION DE LA GRILLE DE LANGAGE -->
+            <div class="grid grid-cols-2 gap-5 p-10 md:grid-cols-5 md:gap-20">
+                <img src="./src/asset/icons/Skills (1).png" alt="">
+                <img src="./src/asset/icons/Skills (2).png" alt="">
+                <img src="./src/asset/icons/Skills (3).png" alt="">
+                <img src="./src/asset/icons/Skills (4).png" alt="">
+                <img src="./src/asset/icons/Skills (5).png" alt="">
+                <img src="./src/asset/icons/Skills (6).png" alt="">
+                <img src="./src/asset/icons/Skills (7).png" alt="" class="hidden lg:block ">
+                <img src="./src/asset/icons/Skills (8).png" alt="" class="hidden lg:block">
+                <img src="./src/asset/icons/Skills (9).png" alt="" class="hidden lg:block">
+                <img src="./src/asset/icons/Skills.png" alt=""  class="hidden lg:block">
             </div>
-        </div>
-        <div class=" flex flex-col gap-10 p-10">
-          <h1 class="text-5xl font-bold">
-            Let's <span class="text-white text-6xl font-bold text-outline">talk</span> for <br>Something special
-          </h1>
-          <p class="text-gray-400">
-            I seek to push the limits to  creativity to creat high-engaging user- <br>friendly, and momorable interactive experices.
-          </p>
-          <h1 class="font-bold text-2xl">
-            dalvakimbatsa@icloud.com <br>
-            124567890
-          </h1>
-        </div>
-      </section>
+        </section>
+
+        <!-- -----------TROIXIEME SECTION  MY EXPERIENCE ------ -->
+
+        <section class="bg-black text-white p-10">
+            <h1 class="text-3xl md:text-5xl text-center py-5">
+                My <span class="font-bold"> Experience</span>
+            </h1>
+            <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-7 border border-gray-500 rounded-xl p-5 ">
+                    <div class="flex flex-col gap-3 md:flex md:flex-row md:items-center md:justify-between">
+                        <div class="flex items-center gap-5 ">
+                            <img src="./src/asset/icons/icons8-google-48.png" alt="logo_google">
+                            <h1 class="md:text-3xl text-2xl font-bold">Lead Software Engineer At Google</h1>
+                        </div>
+                        <h1 class="text-gray-500 ">Nov206-Present</h1>
+                    </div>
+                    <p class="text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse architecto 
+                        voluptatem error aperiam praesentium, obcaecati earum debitis voluptatibus,
+                         eius assumenda cum magnam libero labore! Quia, quidem optio. Dolor, officia.
+                    </p>
+                </div>
+
+                <div class="bg-gray-400/20 flex flex-col gap-7 border border-gray-500 rounded-xl p-5 ">
+                    <div class="flex flex-col gap-3 md:flex md:flex-row md:items-center md:justify-between">
+                        <div class="flex items-center gap-5 ">
+                            <img src="./src/asset/icons/icons8-youtube-48.png" alt="logo_google">
+                            <h1 class="md:text-3xl font-bold text-2xl">Software Engineer At Youtube</h1>
+                        </div>
+                        <h1 class="text-gray-500  ">Nov206-Present</h1>
+                    </div>
+                    <p class="text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse architecto 
+                        voluptatem error aperiam praesentium, obcaecati earum debitis voluptatibus,
+                         eius assumenda cum magnam libero labore! Quia, quidem optio. Dolor, officia.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-7 border border-gray-500 rounded-xl p-5 ">
+                    <div class="flex flex-col gap-3 md:flex md:flex-row md:items-center md:justify-between">
+                        <div class="flex items-center gap-5 ">
+                            <img src="./src/asset/icons/icons8-apple-inc-48.png" alt="logo_google">
+                            <h1 class="md:text-3xl font-bold text-2xl">Junior Software Engineer At Apple</h1>
+                        </div>
+                        <h1 class="text-gray-500 ">Nov206-Present</h1>
+                    </div>
+                    <p class="text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse architecto 
+                        voluptatem error aperiam praesentium, obcaecati earum debitis voluptatibus,
+                         eius assumenda cum magnam libero labore! Quia, quidem optio. Dolor, officia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------QUATRIEME SECTION -- A-PROPOS -->
+        <section class="p-10 md:flex">
+            <img src="src/asset/images/Group 1000015859.png" alt="">
+            <div class="flex flex-col gap-5 md:p-20">
+                <h1 class="text-3xl md:text-5xl">About <span class="font-bold">Me</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo 
+                    ducimus voluptatem aliquam accusamus similique earum laborum beatae sit?
+                     Tenetur ex velit 
+                    accusantium nemo quaerat praesentium ducimus itaque temporibus placeat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo 
+                    ducimus voluptatem aliquam accusamus similique earum laborum beatae sit?
+                     Tenetur ex velit 
+                    accusantium nemo quaerat praesentium ducimus itaque temporibus placeat!
+                </p>
+                <p>                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo 
+                    ducimus voluptatem aliquam accusamus similique earum laborum beatae sit?
+                     Tenetur ex velit 
+                    accusantium nemo quaerat praesentium ducimus itaque temporibus placeat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo 
+                    ducimus voluptatem aliquam accusamus similique earum laborum beatae sit?
+                     Tenetur ex velit 
+                    accusantium nemo quaerat praesentium ducimus itaque temporibus placeat!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo 
+                    ducimus voluptatem aliquam accusamus similique earum laborum beatae sit?
+                     Tenetur ex velit 
+                    accusantium nemo quaerat praesentium ducimus itaque temporibus placeat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo 
+                    ducimus voluptatem aliquam accusamus similique earum laborum beatae sit?
+                     Tenetur ex velit 
+                    accusantium nemo quaerat praesentium ducimus itaque temporibus placeat!
+                </p>
+            </div>
+        </section>
+
+        <!-- ---- CINQUIEME SECTION -- MY PROJECT------ -->
+         
+        <section class="text-white bg-black p-10">
+            <h1 class="text-3xl md:text-5xl text-center">
+                MY <span class="font-bold ">Projects</span>
+            </h1>
+            <div>
+                <div class="md:flex items-center">
+                    <img src="./src/asset/images/image-project-one.png" alt="projet1">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-col gap-5">
+                            <h1 class="font-bold text-3xl md:text-5xl">01</h1>
+                            <h1 class="font-bold text-xl md:text-3xl">Crypto Screener Application</h1>
+                            <p class="text-gray-400 ">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut porro minima consequatur, quae quia deleniti 
+                                magnam ullam! Modi velit hic ea fugiat necessitatibus facere odio, aliquam veritatis autem reiciendis provident!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut porro minima consequatur, quae quia deleniti 
+                                magnam ullam! Modi velit hic ea fugiat necessitatibus facere odio, aliquam veritatis autem reiciendis provident!
+                            </p>
+                        </div>
+                        <img src="./src/asset/icons/Read More.png" alt="" class="size-5">
+                    </div>
+
+                </div>
+                <div class="md:flex md:flex-row-reverse items-center">
+                    <img src="./src/asset/images/image-project-two.png" alt="projet1">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-col gap-5">
+                            <h1 class="font-bold text-3xl md:text-5xl">02</h1>
+                            <h1 class="font-bold text-xl md:text-3xl">Euphoria-Ecommerce(Apparels)
+                                Websites Template
+                            </h1>
+                            <p class="text-gray-400">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut porro minima consequatur, quae quia deleniti 
+                                magnam ullam! Modi velit hic ea fugiat necessitatibus facere odio, aliquam veritatis autem reiciendis provident!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut porro minima consequatur, quae quia deleniti 
+                                magnam ullam! Modi velit hic ea fugiat necessitatibus facere odio, aliquam veritatis autem reiciendis provident!
+                            </p>
+                        </div>
+                        <img src="./src/asset/icons/Read More.png" alt="" class="size-5">
+                    </div>
+
+                </div>
+                <div class="md:flex items-center">
+                    <img src="src/asset/images/image-project-one.png" alt="projet1">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-col gap-5">
+                            <h1 class="font-bold text-3xl md:text-5xl">03</h1>
+                            <h1 class="font-bold text-xl md:text-3xl">Blog Website Template</h1>
+                            <p class="text-gray-400 ">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut porro minima consequatur, quae quia deleniti 
+                                magnam ullam! Modi velit hic ea fugiat necessitatibus facere odio, aliquam veritatis autem reiciendis provident!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut porro minima consequatur, quae quia deleniti 
+                                magnam ullam! Modi velit hic ea fugiat necessitatibus facere odio, aliquam veritatis autem reiciendis provident!
+                            </p>
+                        </div>
+                        <img src="src/asset/icons/Read More.png" alt="" class="size-5">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------------SIXIEME SECTION -- TESTIMONY -->
+         <section class="py-10">
+            <h1 class="text-3xl md:text-5xl text-center" >My <span class="font-bold" >Testimonial</span></h1>
+            <div class="p-10 space-y-10 md:flex md:justify-center md:gap-10">
+                <div class="shadow-2xl shadow-gray-500 h-99.5 w-92.5 p-10 rounded-2xl flex flex-col space-y-7 items-center">
+                    <img src="./src/asset/images/testimoni-image-1.png" alt="">
+                    <p class="text-center">
+                        I recently had to jump on 10+ differnt calls accros eight different countries to find the right owner. 
+                    </p>
+                    <div class="border-2 border-black w-35"></div>
+                    <h1 class="font-bold">Yoanne MOUEBO</h1>
+                    <p class="text-gray-400">Designer</p>
+                </div>
+                <div class="bg-black text-white shadow-2xl shadow-gray-500 h-99.5 w-92.5 p-10 rounded-2xl flex flex-col space-y-7 items-center">
+                    <img src="./src/asset/images/testimoni-image-2.png" alt="">
+                    <p class="text-center">
+                        I recently had to jump on 10+ differnt calls accros eight different countries to find the right owner. 
+                    </p>
+                    <div class="border-2 border-white w-35"></div>
+                    <h1 class="font-bold">Michelle ROYAL</h1>
+                    <p class="text-gray-400">Designer</p>
+                </div>
+                <div class="shadow-2xl shadow-gray-500ay p-10 rounded-2xl flex flex-col h-99.5 w-92.5 space-y-7 items-center">
+                    <img src="./src/asset/images/testimoni-image-1.png" alt="">
+                    <p class="text-center">
+                        I recently had to jump on 10+ differnt calls accros eight different countries to find the right owner. 
+                    </p>
+                    <div class="border-2 border-black w-35"></div>
+                    <h1 class="font-bold">Dieuveil  TSIBAH</h1>
+                    <p class="text-gray-400">Designer</p>
+                </div>
+            </div>
+         </section>
+<!-- --------------------------------SEPTIEME SECTION -- CONTACT -->
+        <section>
+            <div class="p-5 md:flex md:justify-around">
+                <form action="" class="flex flex-col gap-5">
+                    <div class="border rounded p-3 flex gap-5 items-center">
+                        <p class="text-gray-400">Your name </p>
+                        <label for="name">
+                        <input type="text" name="name" id="name">
+                        </label>
+                    </div>
+                    <div class="border  rounded p-3 flex gap-5 items-center">
+                        <p class="text-gray-400">Email </p>
+                        <label for="email">
+                        <input type="text" name="email" id="email">
+                        </label>
+                    </div>
+                    <div class="border  rounded p-3 flex gap-5 items-center">
+                        <p class="text-gray-400">Your website (If exists) </p>
+                        <label for="site">
+                        <input type="text" name="site" id="site">
+                        </label>
+                    </div>
+                    <div class="border  rounded p-3 flex gap-5 items-center">
+                        <p class="text-gray-400">How can I help?*</p>
+                        <textarea name="com" id="com"></textarea>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-5">
+                        <button type="submit" class="bg-black text-white font-bold   rounded h-10 md:h-15 w-30"> Get In touch</button>
+                        <div class="flex gap-5">
+                            <img src="./src/asset/icons/Button.png" alt="logo_facebook">
+                            <img src="./src/asset/icons/Button (1).png" alt="logo_git">
+                            <img src="./src/asset/icons/Button (2).png" alt="x_logo">
+                            <img src="./src/asset/icons/Button (3).png" alt="logo">
+                        </div>
+                    </div>
+                </form>
+                <div class="flex flex-col gap-10 py-10">
+                    <h1 class="text-3xl font-bold md:text-5xl">
+                        Let's <span class="text-outline text-white font-bold">talk </span> for <br> Something special
+                    </h1>
+                    <p class="text-gray-500">
+                        I seek to push the limits of  creativity to creat high-engaging, <br> user-friendly. and memorable interactive expriences.
+                    </p>
+                    <h1 class="text-3xl font-bold">
+                        Dalvakimbatsa@icloud. <br>
+                        +242064580601
+                    </h1>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- -----------PIED DE PAGE  -->
-    <footer class="bg-black text-white flex justify-between px-15 py-5 mt-15">
-      <img src="src/asset/icons/Frame 16.png" alt="logo">
-      <h1>@2025-2026 <br> Made by Kim</h1>
+
+    <!-- -------------------PIED DE PAGE  -->
+    <footer class="bg-black text-white flex justify-between p-5 ">
+        <img src="./src/asset/icons/Frame 16.png" alt="logo_white">
+        <p>@2025-2026 Personal <br>Made by <span class="italic"> Franck_Dalva</span></p>
     </footer>
-  </body>
+</body>
 </html>

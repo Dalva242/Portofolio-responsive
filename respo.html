@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio_responsive</title>
     <link rel="stylesheet" href="src/style/output.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <header>
@@ -73,12 +77,12 @@
             </div>
         </section>
                     <!-- DEUXIEME SECTION -- LANGAGE -->
-        <section>
+        <section class="flex flex-col items-center ">
             <h1 class="text-3xl md:text-5xl text-center py-5">
                 My <span class="font-bold">Skills</span>
             </h1>
             <!-- -------------DEFINITION DE LA GRILLE DE LANGAGE -->
-            <div class="grid grid-cols-2 gap-5 p-10 md:grid-cols-5">
+            <div class="grid grid-cols-2 gap-5 p-10 md:grid-cols-5 md:gap-20">
                 <img src="src/asset/icons/Skills (1).png" alt="">
                 <img src="src/asset/icons/Skills (2).png" alt="">
                 <img src="src/asset/icons/Skills (3).png" alt="">
@@ -248,17 +252,94 @@
         </section>
 
         <!-- ---------------------SIXIEME SECTION -- TESTIMONY -->
-         <section>
+         <section class="py-10">
             <h1 class="text-3xl md:text-5xl text-center" >My <span class="font-bold" >Testimonial</span></h1>
-            <div>
-                <div>
+            <div class="p-10 space-y-10 md:flex md:justify-center md:gap-10">
+                <div class="shadow-2xl shadow-gray-500 h-99.5 w-92.5 p-10 rounded-2xl flex flex-col space-y-7 items-center">
                     <img src="src/asset/images/testimoni-image-1.png" alt="">
-                    <p>
-                        I recently had to jump 
+                    <p class="text-center">
+                        I recently had to jump on 10+ differnt calls accros eight different countries to find the right owner. 
                     </p>
+                    <div class="border-2 border-black w-35"></div>
+                    <h1 class="font-bold">Yoanne MOUEBO</h1>
+                    <p class="text-gray-400">Designer</p>
+                </div>
+                <div class="bg-black text-white shadow-2xl shadow-gray-500 h-99.5 w-92.5 p-10 rounded-2xl flex flex-col space-y-7 items-center">
+                    <img src="src/asset/images/testimoni-image-2.png" alt="">
+                    <p class="text-center">
+                        I recently had to jump on 10+ differnt calls accros eight different countries to find the right owner. 
+                    </p>
+                    <div class="border-2 border-white w-35"></div>
+                    <h1 class="font-bold">Michelle ROYAL</h1>
+                    <p class="text-gray-400">Designer</p>
+                </div>
+                <div class="shadow-2xl shadow-gray-500ay p-10 rounded-2xl flex flex-col h-99.5 w-92.5 space-y-7 items-center">
+                    <img src="src/asset/images/testimoni-image-1.png" alt="">
+                    <p class="text-center">
+                        I recently had to jump on 10+ differnt calls accros eight different countries to find the right owner. 
+                    </p>
+                    <div class="border-2 border-black w-35"></div>
+                    <h1 class="font-bold">Dieuveil  TSIBAH</h1>
+                    <p class="text-gray-400">Designer</p>
                 </div>
             </div>
          </section>
+<!-- --------------------------------SEPTIEME SECTION -- CONTACT -->
+        <section>
+            <div class="p-5 md:flex md:justify-around">
+                <form action="" class="flex flex-col gap-5">
+                    <div class="border rounded p-3 flex gap-5 items-center">
+                        <p class="text-gray-400">Your name </p>
+                        <label for="name">
+                        <input type="text" name="name" id="name">
+                        </label>
+                    </div>
+                    <div class="border  rounded p-3 flex gap-5 items-center">
+                        <p class="text-gray-400">Email </p>
+                        <label for="email">
+                        <input type="text" name="email" id="email">
+                        </label>
+                    </div>
+                    <div class="border  rounded p-3 flex gap-5 items-center">
+                        <p class="text-gray-400">Your website (If exists) </p>
+                        <label for="site">
+                        <input type="text" name="site" id="site">
+                        </label>
+                    </div>
+                    <div class="border  rounded p-3 flex gap-5 items-center">
+                        <p class="text-gray-400">How can I help?*</p>
+                        <textarea name="com" id="com"></textarea>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-5">
+                        <button type="submit" class="bg-black text-white font-bold   rounded h-10 md:h-15 w-30"> Get In touch</button>
+                        <div class="flex gap-5">
+                            <img src="src/asset/icons/Button.png" alt="logo_facebook">
+                            <img src="src/asset/icons/Button (1).png" alt="logo_git">
+                            <img src="src/asset/icons/Button (2).png" alt="x_logo">
+                            <img src="src/asset/icons/Button (3).png" alt="logo">
+                        </div>
+                    </div>
+                </form>
+                <div class="flex flex-col gap-10 py-10">
+                    <h1 class="text-3xl font-bold md:text-5xl">
+                        Let's <span class="text-outline text-white font-bold">talk </span> for <br> Something special
+                    </h1>
+                    <p class="text-gray-500">
+                        I seek to push the limits of  creativity to creat high-engaging, <br> user-friendly. and memorable interactive expriences.
+                    </p>
+                    <h1 class="text-3xl font-bold">
+                        Dalvakimbatsa@icloud. <br>
+                        +242064580601
+                    </h1>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- -------------------PIED DE PAGE  -->
+    <footer class="bg-black text-white flex justify-between p-5 ">
+        <img src="src/asset/icons/Frame 16.png" alt="logo_white">
+        <p>@2025-2026 Personal <br>Made by <span class="italic"> Franck_Dalva</span></p>
+    </footer>
 </body>
 </html>
